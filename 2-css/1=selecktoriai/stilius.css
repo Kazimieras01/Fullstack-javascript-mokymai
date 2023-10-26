@@ -1,0 +1,80 @@
+/* body {
+    background: orange;
+} */
+
+h1 {
+    background: darkgray;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+li {
+    color: chocolate;
+}
+
+ul {
+    border: 2px solid red;
+}
+
+ol {
+    background-color: bisque;
+}
+
+#paryskintas{
+    color: red;
+    text-decoration: underline;
+    font-size: 16px;
+}
+#kitokssarasas{
+    background-color: aquamarine;
+}
+.raudona {
+    color: red;
+}
+.melyna {
+    color: blue;
+}
+.pakreiptas{
+    font-style: italic;
+}
+.pastorintas{
+    font-weight: bold;
+}
+.paragrafelis {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
+h1,h2,h3 {
+    border-left: 5px solid black;
+}
+p, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#paslaugos {
+    background-color: crimson;
+    color:white
+}
+#paslaugos h2 {
+    background-color: rgb(201, 97, 97);
+}
+#paslaugos p {
+    text-align: center;
+}
+ul li {
+    list-style-type: square;
+}
+a {
+    font-size: 20px;
+    background-color: bisque;
+    text-decoration: none;
+}
+a:hover {
+    background-color: rgb(112, 83, 46);
+}
