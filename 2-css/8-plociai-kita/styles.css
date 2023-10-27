@@ -61,3 +61,10 @@ table, td, th {
 #kita-lentele, td {
     vertical-align: center;
 }
+/* ul#pirmas-sarasas galima rasyti taip, labiau sukonkretinant */
+#pirmas-sarasas {
+    list-style-type: square;
+}
+ol#antras-sarasas {
+    list-style-type: lower-alpha;
+}
