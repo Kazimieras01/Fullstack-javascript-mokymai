@@ -1,0 +1,35 @@
+/* galimi naudoti sriftai:
+
+font-family: 'Open Sans', sans-serif;
+weight: 400
+font-family: 'Roboto', sans-serif; 
+weight: 900*/
+/* antras zingsnis: srifto uzdejimas */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+p, a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+/* elementas {
+    font-family: pirmas prioritetas, antras prioritetas, ..., kažkas į temą;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    font-size: 6px;
+}
+a {
+    text-decoration: none;
+}
