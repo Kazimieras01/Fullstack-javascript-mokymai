@@ -1,0 +1,52 @@
+body {
+    background: rgb(216, 124, 188);
+}
+#pirmas{
+    background-color: aliceblue;
+    width: 200px;
+}
+#antras {
+    background-color: aqua;
+    width: 300px;
+}
+#trecias{
+    background: white;
+    width: 50%;
+}
+#ketvirtas {
+    background-color: blue;
+    width: 800px;
+    height: 200px;
+}
+#penktas {
+    background: white;
+    width: 100%;
+    max-width: 1000px;
+}
+#lentele {
+    background-color: antiquewhite;
+    width: 100%;
+    border-style: dotted;
+    border-color: rgb(170, 9, 9);
+    /* width: fit-content; */
+}
+#sestas {
+    background-color: gold;
+    width: 300px;
+    height: 150px;
+}
+#septintas {
+    background-color: azure;
+}
+#astuntas {
+    background: green;
+    /* height: 400px; */
+    /* vw - wiev width 
+    vh - view height*/
+    height: 100vh;
+}
+#astuntas .vaikinis {
+    background: rgb(233, 238, 233);
+    height: 50%; 
+    
+}
