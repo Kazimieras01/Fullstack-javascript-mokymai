@@ -68,3 +68,39 @@ table, td, th {
 ol#antras-sarasas {
     list-style-type: lower-alpha;
 }
+#devintas a {
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 0.2s all;
+}
+
+#devintas a:hover {
+    background: red;
+
+}
+#desimtas {
+    width: 200px;
+    background: orange;
+    transition: 0.3s all;
+}
+#desimtas:hover {
+    width: 250px;
+    background: white;
+}
+#vienuoliktas {
+    width: 300px;
+    background-color: red;
+    transition: 0.2s all;
+}
+
+#vienuoliktas:hover {
+    background-color: wheat;
+}
+#vienuoliktas p {
+    transition: 1s;
+}
+
+#vienuoliktas:hover p {
+    color: red;
+}
