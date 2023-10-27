@@ -26,9 +26,11 @@ body {
 #lentele {
     background-color: antiquewhite;
     width: 100%;
-    border-style: dotted;
-    border-color: rgb(170, 9, 9);
     /* width: fit-content; */
+}
+table, td, th {
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 #sestas {
     background-color: gold;
@@ -49,4 +51,13 @@ body {
     background: rgb(233, 238, 233);
     height: 50%; 
     
+}
+#kita-lentele {
+    background: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#kita-lentele, td {
+    vertical-align: center;
 }
