@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+h1 {
+    background-color: white;
+}
+h2 {
+    background-color: grey;
+}
+#galerija {
+    background-color: white;
+}
+#naujienos {
+    background-color: white;
+}
+
+h3  {
+    color: red;
+}
+p {
+    color: blue;
+}
+a {
+    background-color: red;
+    color: white;
+}
+#nauj {
+    background-color: rgb(240, 232, 199);
+}

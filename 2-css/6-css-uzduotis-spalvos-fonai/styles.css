@@ -1,0 +1,19 @@
+h1 {
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+}
+#antras {
+    background-color: rgb(125, 152, 163);
+}
+p {
+    background-color: rgba(255, 255, 255, 0.541);
+}
+#pirmas {
+    background-image: url(images/maunt1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#trecias {
+    background-image: url(images/maunt2.jpg);
+    background-size: cover;
+}
