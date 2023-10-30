@@ -1,0 +1,38 @@
+body {
+    background: rgb(48, 172, 135);
+}
+/* ==============================pirmas blokas=============================== */
+#pirmas {
+    border: 2px solid black;
+    width: 250px;
+    margin: 50px auto;
+}
+#pirmas h2, p {
+    margin: 0;
+}
+#pirmas .virsus {
+    background: rgba(0, 0, 0, 0.418);
+    padding: 20px 40px;
+}
+#pirmas .virsus h2 {
+    color: white;
+}
+#pirmas .apacia {
+    background: white;
+    padding: 30px 40px;
+}
+.blokas {
+    margin: 50px auto;
+}
+/* =====================================antras blokas====================================== */
+#antras {
+    width: 300px;
+    background: white;
+    padding: 30px;
+}
+#antras h2, #antras p {
+    margin: 0;
+}
+#antras p {
+    margin: 10px 0;
+}
