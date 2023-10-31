@@ -1,0 +1,33 @@
+body {
+    background: orange;
+}
+div {
+    background: rgb(89, 89, 223);
+    width: 100%;
+    max-width: 80%;
+    margin: 5em auto;
+}
+#blokas1 {
+    border: 12px solid red;
+    box-shadow: 5px 5px 15px black;
+}
+
+#blokas2 {
+    padding: 5em;
+    border-radius: 150px;
+    box-shadow:  0 0 50px rgba(0,0,0,0.5);
+}
+#blokas3 {
+    padding: 5em 0;
+    border-bottom: 10px solid green;
+    border-right: 15px dashed green;
+}
+#blokas4 {
+    padding: 0 5em 1em;
+    border-top-left-radius:  20px;
+    border-bottom-right-radius:  50px;
+}
+#blokas5 {
+    padding: 0 0 5em 0;
+    border-left: 10px dashed black;
+}

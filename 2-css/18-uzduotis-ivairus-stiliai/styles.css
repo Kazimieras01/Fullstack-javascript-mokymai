@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    background: linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 0.5)), url('images/fonas.jpg');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#frame {
+    width: 1211px;
+    
+}
+#card1 {
+    margin-top: 90px;
+    margin-left: 135px;
+    border-bottom: 1px solid black;
+}
+#card1 img {
+    width: 602px;
+    height: 430px;
+    border-top-left-radius: 95px;
+    border-top-right-radius: 51px;
+    border-bottom-right-radius: 179px;
+    border-bottom-left-radius: 60px;
+}
+#card2 {
+    margin-left: 135px;
+    margin-top: 6px;
+    border-top: 1px solid black;
+    border-bottom: 7px solid #540F80;
+}
+#card2 h2 {
+    width: 764px;
+    margin-left: 2px;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+.aurora {
+    width: 770px;
+    margin-left: -6px;
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 17px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.aurora1 {
+    margin-left: 2px;
+    color: #0F4380;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#card3 {
+    width: 723px;
+    padding: 60px 40px;
+    margin-top: 22px;
+    margin-left: 135px;
+    border-radius: 25px;
+    background: #540F80;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: white;
+}
+#card3 p {
+    width: 475.886px;
+    gap: 16px;
+    
+}
+#card4 {
+    margin-left: 135px;
+}
+#card4 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+a {
+    background: #01FCB6;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#card5 {
+    margin-left: 135px;
+}
+#card5 img {
+    margin-left: 2px;
+    margin-bottom: 292px;
+    width: 645px;
+    height: 432px;
+    border-radius: 0px 69px 0px 199px;
+    flex-shrink: 0;
+    margin-left: 2px;
+}
+h3 {
+    margin-left: 2px;
+    color: #01FCB6;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.textas1 {
+    margin-left: 2px;
+    width: 712px;
+}
+.textas2 {
+    margin-left: 2px;
+    width: 700px;
+    
+}
+.textas3 {
+    margin-left: 2px;
+    width: 721px;
+    
+}
+#card5 img {
+    width: 645px;
+    height: 432px;
+    border-radius: 0px 69px 0px 199px;
+    
+}

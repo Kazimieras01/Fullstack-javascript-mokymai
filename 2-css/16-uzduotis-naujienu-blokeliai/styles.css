@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(#58F6EC, #FBEDDD)
+}
+#frame {
+    padding: 8px;
+    width: 488px;
+    margin: 64px auto;
+    text-align: center;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+}
+a {
+    background-color: #FCCB92;
+    padding: 8PX 16PX;
+    color: black;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+}
+div {
+    padding: 50px 40px 30px 40px;
+    margin: 30px 8px;
+}
+#card1 {
+    margin: 8px 8px 30px 8px;
+    background: white;
+}
+#card2{
+    background: white;
+}
+#card3 {
+    background: white;
+}
+#card4 {
+    background: white;
+}
+#card5 {
+    background: white;
+    margin: 30px 8px 8px 8px;
+}
