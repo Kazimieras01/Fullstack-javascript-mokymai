@@ -1,0 +1,61 @@
+.blokas {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    height: 600px;
+}
+p {
+    margin: 0;
+}
+.blokas:nth-child(odd) {
+    background-color: blue;
+}
+
+.blokas:nth-child(even) {
+    background-color: red;
+}
+.blokas .stulpelis {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+}
+#eile1 {
+    justify-content: center;
+    align-items: flex-start;
+}
+#eile2 {
+    justify-content: flex-end;
+
+}
+#eile3 {
+    justify-content: center;
+    align-items: center;
+}
+#eile4 {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#eile5 {
+    align-items: center;
+    justify-content: space-between;
+}
+#eile6 {
+    align-items: center;
+    justify-content: space-evenly;
+}
+#eile7 {
+    align-items: center;
+    justify-content: space-around;
+}
+#eile8 {
+    justify-content: center;
+    align-items: baseline;
+}
+#eile9 {
+    justify-content: center;
+    align-items: flex-end;
+}
+#eile10 {
+    align-items: center;
+}
