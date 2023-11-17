@@ -1,0 +1,41 @@
+p {
+    background: white;
+    width: 25%;
+    margin: 0;
+}
+div {
+    padding: 15px;
+}
+#row1 {
+    background-color: darkgoldenrod;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+}
+#row2 {
+    background-color: darkcyan;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+#row3 {
+    background-color: orange;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+#row4 {
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#row5 {
+    background-color: brown;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    box-sizing: border-box;
+}

@@ -1,0 +1,39 @@
+#row1 {
+    display: flex;
+    background: orange;
+    padding: 10px;
+}
+#row2 {
+    display: flex;
+    background-color: orangered;
+}
+#row2 p {
+    background: white;
+    margin: 15px;
+    box-sizing: border-box;
+}
+#row3 {
+    display: flex;
+    background: orange;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 140px;
+}
+#row3 p {
+    background: white;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}   
+#row4 {
+    display: flex;
+    background-color: orangered;
+    padding: 30px;
+    justify-content: space-between;
+}
+#row4 p {
+    background: orange;
+    box-sizing: border-box;
+    width: 25%;
+    margin: 20px 30px;
+    padding: 40px 20px;
+}

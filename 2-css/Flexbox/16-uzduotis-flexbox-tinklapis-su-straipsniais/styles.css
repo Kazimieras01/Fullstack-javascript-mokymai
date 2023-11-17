@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+#navigacija {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+#links li {
+    display: inline-flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+#links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+header {
+    background-color: blueviolet;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header p {
+    width: 70%;
+    color: white;
+}
+menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+#card {
+    width: 29%;
+    border: 2px solid lightgray;
+    margin: 15px;
+}
+#row1 {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+}
+#row1 p {
+    color: white;
+}
+#row2 {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+}
+#row2 p {
+    padding-left: 15px;
+    padding-right: 15px;
+}

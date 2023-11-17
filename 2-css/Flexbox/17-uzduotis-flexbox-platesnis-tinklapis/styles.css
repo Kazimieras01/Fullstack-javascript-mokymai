@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+#navigacija {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+    color: white;
+}
+#links li {
+    display: inline-flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+#links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#links a {
+    color: white;
+}
+#pav {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    text-align: center;
+}
+#pav p {
+    margin-bottom: 30px;
+}
+#btn a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 8px 20px;
+}
+#btn a:hover {
+    color: white;
+    background-color: black;
+}
+header {
+    background-color: aquamarine;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    background-color: bisque;
+}
+#card {
+    width: 27%;
+    background-color: rgb(235, 228, 220);
+    margin: 15px;
+    padding: 10px 15px;
+}
+footer {
+    display: flex;
+    color: white;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+#col2 {
+    width: 30%;
+}
+#col2 li a {
+    color: rgb(86, 153, 184);
+}
+#col1 {
+    width: 29%;
+}
