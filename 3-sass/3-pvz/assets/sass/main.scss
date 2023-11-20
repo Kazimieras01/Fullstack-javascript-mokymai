@@ -1,0 +1,15 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+// body {
+//     background: orange;
+// }
+
+@import 'shared/navbar';
+@import 'shared/footer';
+
+@import 'pages/home';
+@import 'pages/about-us';
+@import 'pages/services';
