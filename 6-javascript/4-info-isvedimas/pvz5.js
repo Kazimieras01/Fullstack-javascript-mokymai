@@ -1,0 +1,11 @@
+console.log('pirmas');
+console.log('----------------');
+console.log('antras');
+console.log('----------------');
+console.log('trečias');
+console.log('----------------');
+console.log();
+console.log('----------------');
+console.log('ketvirtas');
+console.log('----------------');
+console.log('penktas');
