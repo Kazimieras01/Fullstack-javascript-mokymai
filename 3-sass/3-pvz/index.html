@@ -6,15 +6,52 @@
     <title>Sass pvz 3</title>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body>
+<body class="home-page">
     <nav>
-        <a href="#">Įmonė A</a>
+        <a href="index.html">Įmonė A</a>
         <ul>
-            <li><a href="#">Pradžia</a></li>
-            <li><a href="#">Paslaugos</a></li>
-            <li><a href="#">Apie mus</a></li>
+            <li><a href="index.html" class="active">Pradžia</a></li>
+            <li><a href="services.html">Paslaugos</a></li>
+            <li><a href="about-us.html">Apie mus</a></li>
         </ul>
     </nav>
-    
+    <header>
+        <div class="container">
+            <h1>Įmonė A</h1>
+        </div>
+    </header>
+    <div class="about-us-section">
+        <div class="container">
+            <h2>Apie mus</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non numquam quae pariatur dignissimos nobis porro autem fugit ducimus repellat facere eos aspernatur doloremque reprehenderit, est, unde eum itaque aut deserunt?</p>
+            <a href="about-us.html">Skaityti daugiau</a>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="container">
+            <h2>Paslaugos</h2>
+            <div class="services-list">
+                <div class="service-box">
+                    <h3>Paslauga 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, adipisci.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h3>Paslauga 2</h3>
+                    <p>
+                        Illo hic ducimus quam quibusdam qui obcaecati, sequi quaerat ipsum.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h3>Paslauga 3</h3>
+                    <p>
+                        Iure eligendi voluptate distinctio facilis reprehenderit nisi dolor eos. Dignissimos?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- .service-box*3>h3{Paslauga $}+p>lorem10 -->
 </body>
 </html>

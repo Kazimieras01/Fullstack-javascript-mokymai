@@ -8,7 +8,8 @@ nav {
         color: white;
         transition:  0.2s all;
         text-decoration: none;
-        &:hover {
+        &:hover,
+        &.active {
             color:orange;
         }
     }
