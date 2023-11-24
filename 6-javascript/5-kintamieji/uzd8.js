@@ -1,2 +1,2 @@
-let kintamas = ('25');
-console.log (kintamas, kintamas, kintamas, kintamas, kintamas);
+let kintamasis = ('25');
+console.log (kintamasis,kintamasis,kintamasis,kintamasis,kintamasis);

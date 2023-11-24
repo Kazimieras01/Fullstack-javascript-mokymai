@@ -107,7 +107,7 @@ body {
     height: 127px;
     flex-shrink: 0;
     border-radius: 127px;  
-    margin-top: 46px;  
+    margin-top: 46px; 
 }
 #img2 {
     background-image: url(images/img2.jpg);
