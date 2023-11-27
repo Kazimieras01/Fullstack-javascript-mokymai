@@ -1,8 +1,8 @@
-const dvizenklisSkaicius = 58; // Galite pakeisti šį skaičių norimu kitu dvizenkliu skaičiumi
+let dvizenklisSkaicius = 58; 
 
-const pirmasSkaitmuo = Math.floor(dvizenklisSkaicius / 10); // Pirmas skaitmuo
-const antrasSkaitmuo = dvizenklisSkaicius % 10; // Antras skaitmuo
+let pirmasSkaitmuo = Math.floor(dvizenklisSkaicius / 10); 
+let antrasSkaitmuo = dvizenklisSkaicius % 10; 
 
-const skaitmenuSuma = pirmasSkaitmuo + antrasSkaitmuo; // Skaitmenų suma
+let skaitmenuSuma = pirmasSkaitmuo + antrasSkaitmuo; 
 
 console.log(`${pirmasSkaitmuo} + ${antrasSkaitmuo} = ${skaitmenuSuma}`);

@@ -1,0 +1,19 @@
+.header {
+    background-image: url(images/backgroundheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav img {
+    justify-content: flex-start;
+}
+.nav .navbar {
+    display: inline-flex;
+}
