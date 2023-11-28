@@ -3,7 +3,7 @@ let vntPerVal = 15;
 let workers = 5;
 let firstPrice = 0.3;
 let lastPrice = 1.5;
-let order = 300;
+let order = 700;
 
 let vntPerDay = (workers * dVal) *vntPerVal;
 console.log(`Per darbo dieną iškepta duonos kepalų: ${vntPerDay}`);
