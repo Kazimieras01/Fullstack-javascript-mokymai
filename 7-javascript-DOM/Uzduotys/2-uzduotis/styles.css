@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+r {
+    color: red;
+}
+h1 {
+    text-transform: uppercase;
+    color: darkgreen;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+h2 {
+    color: darkgreen;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.navigacija {
+    background-color: darkgreen;
+    color: white;
+}
+.navigacija .container {
+    max-width: 100%;
+    color: white;
+    padding: 50px;
+}
+.navigacija .container .nav-item .nav-link {
+    color: white;
+}
+.calculator-fluid .container .col-lg-4 {
+    border: 1px solid darkgreen;
+    gap: 20px;
+}
+.calculator-fluid .container .col-lg-4 select {
+    width: 100%;
+    border: 1px solid dimgrey;
+}
+.calculator-fluid .container .col-lg-8,.col {
+    margin-right: 40px;
+    background-color: white;
+}
+.calculator-fluid .container .col-lg-8 button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid darkgreen;
+    width: 97%;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+#stat {
+    margin-left: 3%;
+    border-right: 0px;
+}
+.calculator-fluid .container {
+    padding: 0;
+}
+.calculator-fluid .container .col-lg-8 {
+    padding: 30px;
+}
+.calculator-fluid .container .col-lg-8 .col {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculator-fluid .container .col-lg-4 {
+    margin: 1.5%;
+    width: 30.3%;
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    height: 156px;
+    object-fit: contain;
+}
+.container .row #suvestine {
+    padding: 30px;
+}
+.container .row #suvestine .ivestis {
+    float: right;
+}
+.container .row #suvestine p.mygt {
+    text-transform: uppercase;
+    color: rgb(179, 199, 179);
+}
+.calculator-fluid .container .col.kiekis {
+    margin-left: 10px;
+    width: 100%;
+    max-width: 33%;
+}
+.calculator-fluid .container .col input {
+    width: 100%;
+}
+.but_active {
+    background-color: darkgreen;
+    color: white;
+}
+.hide {
+    display: none;
+}

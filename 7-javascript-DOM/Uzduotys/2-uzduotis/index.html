@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privaziuosim Supjausim</title>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="calculator-fluid">
+            <div class="container">
+                <h1>Skaiciuokle</h1>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>Medienos kainos ir kubu skaiciuokle</h2>
+                        <p>pasirinkite mediena:</p>
+                        <div class="row">
+                            <div class="col">
+                                <button id="stat" class="but_active">statybine</button>
+                            </div>
+                            <div class="col">
+                                <button id="kalib">kalibruota</button>
+                            </div>
+                        </div>
+                        <p>pasirinkite ismatavimus: </p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="./vendor/images/lentos_aukstis.jpg">
+                                <label for="storis">Storis</label> <br>
+                                <select name="storis" id="storis">
+                                    <option class="25" value="25">25mm</option>
+                                    <option class="30" value="30">30mm</option>
+                                    <option class="50" value="50">50mm</option>
+                                    <option class="100" value="100">100mm</option>
+                                    <option class="120" value="120">120mm</option>
+                                    <option class="150" value="150">150mm</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="./vendor/images/Lentos_plotis.jpg">
+                                <label for="plotis">Plotis</label> <br>
+                                <select name="plotis" id="plotis">
+                                    <option class= "hide" id="vienas" value="50">50mm</option>
+                                    <option class= "hide" id="du" value="75">75mm</option>
+                                    <option class= "hide" id="trys" value="100">100mm</option>
+                                    <option class= "hide" id="keturi" value="120">120mm</option>
+                                    <option class= "hide" id="penki" value="150">150mm</option>
+                                    <option class= "hide" id="sesi" value="200">200mm</option>
+                                    <option class= "hide" id="septyni" value="250">250mm</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="./vendor/images/lentos_ilgis.jpg">
+                                <label for="ilgis">Ilgis</label> <br>
+                                <select name="ilgis" id="ilgis">
+                                    <option value="3000">3000mm</option>
+                                    <option value="6000">6000mm</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col kiekis">
+                                <label for="kiekis">PASIRINKITE LENTŲ KIEKĮ:</label> <br>
+                                <input type="number" id="kiekis" value="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="suvestine">
+                        <h2>Suvestine</h2>
+                        <p class="mygt"><span id="mygt">statybine</span> mediena</p>
+                        <p>Storis: <span id="stor" class="ivestis">25 mm</span></p>
+                        <p>Plotis: <span id="plot" class="ivestis">50 mm</span></p>
+                        <p>Ilgis: <span id="ilg" class="ivestis">3000 mm</span></p>
+                        <p>Lentu kiekis: <span id="kiek" class="ivestis">1</span></p>
+                        <p>Kubatura: <strong><span id="kub" class="ivestis">0,00375</span></strong></p>
+                        <p>Viso: <strong><span id="vis" class="ivestis">1,27€<r> + PVM</r></span></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
