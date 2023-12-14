@@ -5,6 +5,6 @@ function labas (vardas){
 function ate(vardas){
     console.log(`Viso gero,`,vardas)
 };
- let vard = ('Jonas')
+ let vard = 'Jonas'
 labas(vard)
 ate(vard)
