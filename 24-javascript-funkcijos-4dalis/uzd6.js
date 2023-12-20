@@ -1,18 +1,8 @@
-function sum(a, b) {
-    return a+b;
-}
-function sum3(a,b,c) {
-    return a+b+c;
-}
-function minus(a,b) {
-    return a-b;
-}
-function times(a,b) {
-    return a*b;
-}
-function split(a,b) {
-    return a/b;
-}
+function sum(a, b) {return a+b;}
+function sum3(a,b,c) {return a+b+c;}
+function minus(a,b) {return a-b;}
+function times(a,b) {return a*b;}
+function split(a,b) {return a/b;}
 function randomcount(qty) {
     let numbers = [];
     for (let i = 0; i<qty; i++) {
