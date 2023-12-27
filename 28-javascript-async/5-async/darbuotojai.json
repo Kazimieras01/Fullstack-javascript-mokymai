@@ -1,0 +1,26 @@
+[
+    {
+        "vardas": "Tomas",
+        "pavarde": "Tomauskas",
+        "etatas": 1,
+        "atlyginimas": 1000
+    },
+    {
+        "vardas": "Petras",
+        "pavarde": "Petrauskas",
+        "etatas": 0.75,
+        "atlyginimas": 780
+    },
+    {
+        "vardas": "Bronius",
+        "pavarde": "Gandonas",
+        "etatas": 1.5,
+        "atlyginimas": 12000
+    },
+    {
+        "vardas": "Jonas",
+        "pavarde": "Jonauskas",
+        "etatas": 1,
+        "atlyginimas": 3000
+    }
+]
