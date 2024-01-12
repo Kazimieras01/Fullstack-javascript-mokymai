@@ -7,3 +7,5 @@ node server.js
 
 
 "dev": "nodemon server.js" ( pakeisti sia eilute, scripts skiltyje, package.json faile)
+
+npm run dev
