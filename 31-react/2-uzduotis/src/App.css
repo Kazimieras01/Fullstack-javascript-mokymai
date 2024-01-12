@@ -1,0 +1,19 @@
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.navbar {
+  background: #222;
+  padding: 2px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+.navbar a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin-left: 20px; }
+.navbar a:hover {
+      color: orange;
+      transition: 0.3s all; }

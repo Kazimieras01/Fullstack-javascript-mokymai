@@ -1,0 +1,23 @@
+#root {
+    width: 100%;
+    max-width: 1920px;
+    text-align: center;
+}
+#kepyklos {
+    background-color: bisque;
+    padding: 1em;
+    margin: 1em;
+}
+#vistos {
+    background-color: bisque;
+    padding: 1em;
+    margin: 1em;
+}
+#begikai {
+    background-color: bisque;
+    padding: 1em;
+    margin: 1em;
+}
+#color {
+    color: red;
+}

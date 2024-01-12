@@ -1,0 +1,41 @@
+use uzduotys 
+
+db.atlyginimai.find({'Miestas': "Vilnius"})
+
+db.atlyginimai.find({"Miestas": "Kaunas"})
+
+db.atlyginimai.find({"Miestas": {"$in": ["Vilnius", "Kaunas", "Klaipėda"]}})
+
+db.atlyginimai.find({"Miestas": {"$nin": ["Vilnius", "Kaunas", "Klaipėda"]}})
+
+db.atlyginimai.find({"lygis": 3})
+
+db.atlyginimai.find({"lygis": 3, "Šaltinis": "JavaScript"})
+
+db.atlyginimai.find({"lygis": 1, "Miestas": "Kaunas", "Šaltinis": "JavaScript"})
+
+db.atlyginimai.find({"Šaltinis": {"$ne": "JavaScript"}})
+
+db.atlyginimai.find({"lygis": {"$in": [2, 3]}})
+
+db.atlyginimai.find({"Atlyginimas": {"$lte": 1000}})
+
+db.atlyginimai.find({"Atlyginimas": {"$gt": 3000}, "Miestas": "Vilnius"})
+
+db.atlyginimai.find({"Gal turite dar kokių pastebėjimų apie programuotojų atlyginimų tendencijas Lietuvoje ir pasaulyje?": {"$exists": true, "$ne": ""}})
+
+db.atlyginimai.find({"Šaltinis": "JavaScript", "Atlyginimas": {"$gte": 2000}}, {"Miestas": 1, "Atlyginimas": 1, "Šaltinis": 1, "_id": 0})
+
+db.atlyginimai.find({"metai": {"$lte": 5}}).sort({"metai": -1})
+
+db.atlyginimai.find({"Miestas": "Kaunas"}).count()
+
+db.atlyginimai.find({"Miestas": "Vilnius"}).count()
+
+db.atlyginimai.find({"lygis": 3, "Miestas": {"$in": ["Vilnius", "Kaunas", "Klaipėda"]}})
+
+db.atlyginimai.find({"lygis": 3, "Miestas": {"$nin": ["Vilnius", "Kaunas", "Klaipėda"]}})
+
+db.atlyginimai.find({"lygis": 3, "Miestas": "Užsienis"})
+
+db.atlyginimai.find({"Šaltinis": "JavaScript", "lygis": 1}).sort({"Atlyginimas": -1}).limit(1)

@@ -1,0 +1,272 @@
+1. Parašykite MongoDB užklausą, kuri surastų pirmojo dokumento nakvynės kainą, valymo mokestį, miegamųjų kiekį, svečių skaičių, adresą, host_name, host_location, host_about. Taip pat, ar host turi patvitintą tapatybę ir ar turi profilio nuotrauką. 
+db.listings.find({}, {
+  price: 1,
+  cleaning_fee: 1,
+  bedrooms: 1,
+  accommodates: 1,
+  address: 1,
+  "host.name": 1,
+  "host.location": 1,
+  "host.about": 1,
+  "host.verified": 1,
+  "host.picture_url": 1
+}).limit(1)
+
+2. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kur property_type yra House. 
+db.listings.find({property_type: "House"})
+
+3. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kur nakvynės kaina yra didesnė už 500. Pateikite šiuos atributus: listing_url, name, host_name, host_location, reviewer_name, price.
+db.listings.find({ price: { $gt: 500 } }, {
+  listing_url: 1,
+  name: 1,
+  "host.name": 1,
+  "host.location": 1,
+  "reviews.reviewer_name": 1,
+  price: 1
+})
+
+4. Parašykite MongoDB užklausą, kuri surastų visus skelbimus Brazilijoje, kurių review score yra ne mažesnis nei 9. Pateikite šiuos atributus: name, address, review_scores_rating.
+db.listings.find({
+  "address.country": "Brazil",
+  "review_scores.rating": { $gte: 9 }
+}, {
+  name: 1,
+  address: 1,
+  "review_scores.rating": 1
+})
+
+5. Parašykite MongoDB užklausą, kuri surastų visus skelbimus JAV, kurie turi amenity 'hot tub'.
+db.listings.find({
+  "address.country": "United States",
+  amenities: "hot tub"
+})
+
+
+6. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurie turi amenity 'pool', o nakvynės kaina yra tarp 200 ir 400.
+db.listings.find({
+  amenities: "pool",
+  price: { $gte: 200, $lte: 400 }
+})
+
+
+7. Parašykite MongoDB užklausą, kuri surastų visus skelbimus Kanadoje arba Meksikoje, kurie turi amenity 'washer'.
+db.listings.find({
+  $or: [
+    { "address.country": "Canada" },
+    { "address.country": "Mexico" }
+  ],
+  amenities: "washer"
+})
+
+
+8. Parašykite MongoDB užklausą, kuri surastų top 10 skelbimų pagal atsiliepimų kiekį. Pateikite šiuos atributus: listing_url, name, country, review_scores.
+db.listings.find().sort({ "review_scores.review_count": -1 }).limit(10).project({
+  listing_url: 1,
+  name: 1,
+  "address.country": 1,
+  "review_scores": 1
+})
+
+
+9. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurie turi amenity 'fireplace', o atsiliepimų reitingas ne mažesnis nei 8.
+db.listings.find({
+  amenities: "fireplace",
+  "review_scores.rating": { $gte: 8 }
+})
+
+
+10. Parašykite MongoDB užklausą, kuri surastų top 10 skelbimų pagal nakvynės kainą. Pateikite šiuos atributus: listing_url, name, address, amenities, price, review scores.
+db.listings.find().sort({ price: 1 }).limit(10).project({
+  listing_url: 1,
+  name: 1,
+  address: 1,
+  amenities: 1,
+  price: 1,
+  "review_scores": 1
+})
+
+
+11. Parašykite MongoDB užklausą, kuri surastų 10 skelbimų, turinčių žemiausią nakvynės kainą. Pateikite šiuos atributus: listing_url, name, address, amenities, price, review scores.
+db.listings.find().sort({ price: 1 }).limit(10).project({
+  listing_url: 1,
+  name: 1,
+  address: 1,
+  amenities: 1,
+  price: 1,
+  "review_scores": 1
+})
+
+
+12. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių number_of_reviews yra lygus 0. Pateikite šiuos atributus: name, address, reviewer_name, review_scores_rating.
+db.listings.find({
+  number_of_reviews: 0
+}, {
+  name: 1,
+  address: 1,
+  "reviews.reviewer_name": 1,
+  "review_scores.rating": 1
+})
+
+
+13. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host_is_superhost yra true. Pateikite šiuos atributus: name, address, host, reviewer_name, review_scores_rating.
+db.listings.find({
+  "host.host_is_superhost": true
+}, {
+  name: 1,
+  address: 1,
+  "host": 1,
+  "reviews.reviewer_name": 1,
+  "review_scores.rating": 1
+})
+
+
+14. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių beds atributas yra 2 ar daugiau. Pateikite šiuos atributus: name, address, host, bed_type, bed, review_scores_rating.
+db.listings.find({
+  beds: { $gte: 2 }
+}, {
+  name: 1,
+  address: 1,
+  "host": 1,
+  bed_type: 1,
+  beds: 1,
+  "review_scores.rating": 1
+})
+
+
+15. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host_name atributas turi žodį 'Livia'. Pateikite šiuos atributus: name, address, host.
+db.listings.find({
+  "host.name": /Livia/i
+}, {
+  name: 1,
+  address: 1,
+  "host": 1
+})
+
+16. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių availability_365 atributas yra didesnis nei 300. Pateikite šiuos atributus: name, address, host, availability.
+db.listings.find({
+  availability_365: { $gt: 300 }
+}, {
+  name: 1,
+  address: 1,
+  "host": 1,
+  availability_365: 1
+})
+
+
+17. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių amenities masyvas turi 'TV' ir 'Wifi'. Pateikite šiuos atributus: listing_url, name, amenity, host.
+db.listings.find({
+  amenities: { $all: ['TV', 'Wifi'] }
+}, {
+  listing_url: 1,
+  name: 1,
+  amenities: 1,
+  "host": 1
+})
+
+
+18. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host_total_listings_count yra didesnis už 1. Pateikite šiuos atributus: listing_url, name, host, price.
+db.listings.find({
+  "host.host_total_listings_count": { $gt: 1 }
+}, {
+  listing_url: 1,
+  name: 1,
+  "host": 1,
+  price: 1
+})
+
+
+19. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių property_type yra 'Apartment', o beds yra daugiau arba lygu 2. Pateikite šiuos atributus: listing_url, name, property_type, bed, price.
+db.listings.find({
+  property_type: "Apartment",
+  beds: { $gte: 2 }
+}, {
+  listing_url: 1,
+  name: 1,
+  property_type: 1,
+  beds: 1,
+  price: 1
+})
+
+
+20. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurie turi ne mažiau 2 vonios kambarių. Pateikite šiuos atributus: listing_url, name, property_type, bed, bathrooms, price.
+db.listings.find({
+  bathrooms: { $gte: 2 }
+}, {
+  listing_url: 1,
+  name: 1,
+  property_type: 1,
+  bed: 1,
+  bathrooms: 1,
+  price: 1
+})
+
+
+21. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių kaina yra didesnė nei 500, o depozitas yra daugiau arba lygu 1000. Pateikite šiuos atributus: listing_url, name, property_type, bed, price, security_deposit.
+db.listings.find({
+  price: { $gt: 500 },
+  security_deposit: { $gte: 1000 }
+}, {
+  listing_url: 1,
+  name: 1,
+  property_type: 1,
+  bed: 1,
+  price: 1,
+  security_deposit: 1
+})
+
+
+22. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių cancellation policy yra 'flexible'. Pateikite šiuos atributus: listing_url, name, property_type, bed, price, cancellation_policy.
+db.listings.find({
+  cancellation_policy: "flexible"
+}, {
+  listing_url: 1,
+  name: 1,
+  property_type: 1,
+  bed: 1,
+  price: 1,
+  cancellation_policy: 1
+})
+
+
+23. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, turinčius bent po vieną atsiliepimą. Pateikite šiuos atributus: listing_url, name, address, reviews.
+db.listings.find({
+  "reviews.0": { $exists: true }
+}, {
+  listing_url: 1,
+  name: 1,
+  address: 1,
+  reviews: 1
+})
+
+
+24. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių atributo suburb yra 'Lagoa'. Pateikite šiuos atributus: listing_url, name, address.
+db.listings.find({
+  "address.suburb": "Lagoa"
+}, {
+  listing_url: 1,
+  name: 1,
+  address: 1
+})
+
+
+25. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host yra superhost ir turi bent 2 skelbimus. Pateikite šiuos atributus: listing_url, name, address, host.
+db.listings.find({
+  "host.host_is_superhost": true,
+  "host.host_total_listings_count": { $gte: 2 }
+}, {
+  listing_url: 1,
+  name: 1,
+  address: 1,
+  host: 1
+})
+
+
+26. Parašykite MongoDB užklausą, kuri surastų visus skelbimus, kurių host turi profilio nuotraukos url. Pateikite šiuos atributus: listing_url, name, address, host_picture_url.
+db.listings.find({
+  "host.host_picture_url": { $exists: true }
+}, {
+  listing_url: 1,
+  name: 1,
+  address: 1,
+  "host.host_picture_url": 1
+})
