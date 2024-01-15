@@ -1,0 +1,13 @@
+POST http://localhost:3001/createNote
+Content-Type: application/json
+
+{
+    "title": "title ABC",
+    "description": "description ABC"
+}
+###
+
+GET http://localhost:3001/getNotes
+###
+
+GET http://localhost:3001/getNotes/:id

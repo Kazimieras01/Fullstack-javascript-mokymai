@@ -1,4 +1,31 @@
 GET http://localhost:3000/books
 ###
 
-GET http://localhost:3000/books/usdthiuhte986y893eiry98
+GET http://localhost:3000/books/65a10a62450b9cad77d7c65b
+###
+
+GET http://localhost:3000/books/neegzistuojanti
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Knyga ABC",
+    "author": "Autorius Jonas",
+    "description": "kokia nors knygute",
+    "publishedYear": 2023,
+    "price": 21.49
+}
+###
+
+DELETE http://localhost:3000/books/65a13ff54d2e4abe45b9c7ee
+###
+
+PATCH http://localhost:3000/books/65a10a62450b9cad77d7c65b
+Content-Type: application/json
+
+{
+    "price": 150
+}
