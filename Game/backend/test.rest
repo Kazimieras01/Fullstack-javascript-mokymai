@@ -1,0 +1,8 @@
+POST http://localhost:5000/Scores
+Content-Type: application/json
+
+{
+    "name": "Knyga",
+    "score": 150
+}
+###
