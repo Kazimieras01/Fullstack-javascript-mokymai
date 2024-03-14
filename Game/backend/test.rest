@@ -6,3 +6,5 @@ Content-Type: application/json
     "score": 150
 }
 ###
+
+GET http://mongodb+srv://ksimkevicius01:GnijTy7YdF9Ku4RW@cluster0.2efpicy.mongodb.net/getscores

@@ -24,7 +24,7 @@ const MainScrean = () => {
       <button onClick={handlePlayGameClick}>Play Game</button>
       <button onClick={handleLeaderboardClick}>Leaderboard</button>
 
-      {/* Render Leaderboard component if showLeaderboard is true */}
+      
       {showLeaderboard && <Leaderboard />}
     </div>
   );

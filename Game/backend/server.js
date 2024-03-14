@@ -61,17 +61,6 @@ app.post('/Scores', async (req, res) => {
         return res.status(500).send({ message: error.message });
     }
 });
-// app.delete('/deleteNote/:id', async (req, res) => {
-   
-//     try {
-       
-
-//         await NoteModel.findByIdAndDelete(req.params.id)
-//         return res.send({message: 'Book deleted successfully'})
-//     } catch (error) {
-//         return res.status(500).send({message: error.message})
-//     }
-// })
 
 app.listen(5000, () => {
   console.log("SERVER RUNS");
