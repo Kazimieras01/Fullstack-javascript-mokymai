@@ -9,7 +9,7 @@ const Leaderboard = () => {
     // Fetch scores from your API
     const fetchScores = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/getScores');
+        const response = await axios.get('mongodb+srv://skyline96gtr:gZadT5QY58cyqaix@cluster0.u0tk2qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
         const fetchedScores = response.data;
 
         // Sort scores from highest to lowest

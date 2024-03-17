@@ -115,13 +115,13 @@ const Game = () => {
         <div id="score">Score: {score}</div>
         <div id="lives">
           {[...Array(heartsToShow)].map((_, index) => (
-            <img key={index} src="./src/assets/heart.svg" alt="" />
+            <img key={index} src="./assets/heart.svg" alt="" />
           ))}
         </div>
       </div>
-      <video className='video-bg' autoPlay muted loop>
-        <source src="./src/assets/gamol.mp4" type="video/mp4" />
-      </video>
+      {/* <video className='video-bg' autoPlay muted loop>
+        <source src="./assets/gamol.mp4" type="video/mp4" />
+      </video> */}
     </div>
   );
 };

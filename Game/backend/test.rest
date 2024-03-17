@@ -1,4 +1,4 @@
-POST http://localhost:5000/Scores
+POST http://mongodb+srv://skyline96gtr:gZadT5QY58cyqaix@cluster0.u0tk2qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 Content-Type: application/json
 
 {
@@ -7,4 +7,4 @@ Content-Type: application/json
 }
 ###
 
-GET http://mongodb+srv://ksimkevicius01:GnijTy7YdF9Ku4RW@cluster0.2efpicy.mongodb.net/getscores
+GET http://mongodb+srv://skyline96gtr:gZadT5QY58cyqaix@cluster0.u0tk2qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

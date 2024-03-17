@@ -2,13 +2,16 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const ScoreModel = require("./models/Scores");
+const uri = "mongodb+srv://skyline96gtr:gZadT5QY58cyqaix@cluster0.u0tk2qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const cors = require("cors");
 
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://127.0.0.1:27017/Scores_db');
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('Connected to MongoDB Atlas'))
+    .catch(err => console.error('Error connecting to MongoDB Atlas:', err));
 const db = mongoose.connection
 db.on('error', (err) => console.log(err))
 db.once('open', () => console.log('Connected to database successfully'))
