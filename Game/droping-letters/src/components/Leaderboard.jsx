@@ -9,7 +9,7 @@ const Leaderboard = () => {
     // Fetch scores from your API
     const fetchScores = async () => {
       try {
-        const response = await axios.get('mongodb+srv://skyline96gtr:gZadT5QY58cyqaix@cluster0.u0tk2qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+        const response = await axios.get('https://65f805a9ba034237dc21c510--vocal-pegasus-a61cb7.netlify.app/.netlify/functions/server/getScores');
         const fetchedScores = response.data;
 
         // Sort scores from highest to lowest
