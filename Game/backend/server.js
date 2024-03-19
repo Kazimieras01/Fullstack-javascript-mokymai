@@ -1,5 +1,5 @@
 const express = require("express");
-const serverless = require('serverless-http');
+// const serverless = require('serverless-http');
 const app = express();
 const mongoose = require("mongoose");
 const ScoreModel = require("./models/Scores");
@@ -68,4 +68,4 @@ app.post('/Scores', async (req, res) => {
 app.listen(5000, () => {
   console.log("SERVER RUNS");
 });
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
